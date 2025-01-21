@@ -2,7 +2,7 @@ name: mynginx
 namespace: test
 replicaCount: 1    # Default to 2 if not set
 image: my-nginx:latest        # Default to nginx:latest if not set
-containerPort: 8087 # Default to 80 if not set
+containerPort: 80 # Default to 80 if not set
 memory: 128Mi            # Default to 64Mi if not set
 cpu: 500m                  # Default to 250m if not set
 imagePullPolicy: IfNotPresent # Default to IfNotPresent if not set
