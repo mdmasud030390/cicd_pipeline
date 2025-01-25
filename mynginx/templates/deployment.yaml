@@ -19,5 +19,12 @@ spec:
       - name: {{ .Values.name }}-deployment
         image: {{ .Values.image }}
         imagePullPolicy: {{ .Values.imagePullPolicy }}
+        resources:
+          requests:
+            memory: "{{ .Values.memory }}"
+            cpu: "{{ .Values.cpu }}"
+          limits:
+            memory: "{{ .Values.memory }}"
+            cpu: "{{ .Values.cpu }}"
         ports:
         - containerPort: {{ .Values.containerPort }}
